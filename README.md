@@ -1,10 +1,10 @@
 # Ember-cli-iframe-resizer
 
-This README outlines the details of collaborating on this Ember addon.
+Including this addon automatically includes iframeResizer.js and iframeResizer.contentWindow.js into the vendor tree.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/selvaa89/ember-cli-iframe-resizer.git` this repository
 * `cd ember-cli-iframe-resizer`
 * `npm install`
 * `bower install`
