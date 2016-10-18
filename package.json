@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-iframe-resizer",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
     "doc": "doc",
@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "",
+  "repository": "https://github.com/selvaa89/ember-cli-iframe-resizer",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "selvaa89",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
@@ -41,10 +41,12 @@
     "loader.js": "^4.0.1"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "iframe-resizer"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.6"
+    "ember-cli-babel": "^5.1.6",
+    "iframe-resizer": "3.5.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
