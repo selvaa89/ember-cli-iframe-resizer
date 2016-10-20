@@ -9,11 +9,12 @@ module.exports = {
     var assets_path = require('path').join('iframe-resizer','index.js');
     this.treePaths['vendor'] = require.resolve('iframe-resizer').replace(assets_path, '');
   },
-  included: function(app) {
-    var options = this.app.options.iframeResizerOptions || {enabled: true};
+  included: function(app, parentAddon) {
+    var target = parentAddon || app;
+    var options = target.options.iframeResizerOptions || {enabled: true};
     if (options.enabled) {
-      this.app.import('vendor/iframe-resizer/js/iframeResizer.js');
-      this.app.import('vendor/iframe-resizer/js/iframeResizer.contentWindow.js');
+      target.import('vendor/iframe-resizer/js/iframeResizer.js');
+      target.import('vendor/iframe-resizer/js/iframeResizer.contentWindow.js');
     }
   }
 };
