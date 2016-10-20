@@ -9,8 +9,8 @@ module.exports = {
     var assets_path = require('path').join('iframe-resizer','index.js');
     this.treePaths['vendor'] = require.resolve('iframe-resizer').replace(assets_path, '');
   },
-  included: function(app, parentAddon) {
-    var target = parentAddon || app;
+  included: function(app) {
+    var target = app.app || app;
     var options = target.options.iframeResizerOptions || {enabled: true};
     if (options.enabled) {
       target.import('vendor/iframe-resizer/js/iframeResizer.js');
