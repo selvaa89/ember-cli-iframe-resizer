@@ -46,7 +46,7 @@
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6",
-    "iframe-resizer": "3.5.0"
+    "iframe-resizer": "3.5.12"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
